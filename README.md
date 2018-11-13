@@ -1,0 +1,2 @@
+# LightningWands
+LightningWands Plugin
