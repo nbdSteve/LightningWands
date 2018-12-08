@@ -18,6 +18,9 @@ import org.bukkit.plugin.Plugin;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class for the /lw and /lightning command
+ */
 public class LightningCommand implements CommandExecutor {
     //Register the class so that the command will work
     public LightningCommand(LightningWands pl) {

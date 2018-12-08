@@ -122,7 +122,7 @@ invalid-uses:
 #
 
 #
-# Message sent to the player when their lightningwand runs out of uses (uses = 0).
+# Message sent to the player when their lightning-wand runs out of uses (uses = 0).
 # No permission required, set this to nothing to remove the message.
 break:
 - "&7 "
