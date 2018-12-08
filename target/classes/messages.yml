@@ -1,0 +1,173 @@
+#
+# LightningWands messages v3.0
+#
+# Message sent to the player when the type the /lw help command.
+# Requires premission: lightning.help
+help:
+- "&7 "
+- "&f&lLightningWands &7- &emade by &6&lnbdSteve"
+- "&7 "
+- "&3/lw give <player> <item> <level> <uses> <amount>"
+- "&7Give the target player their item with the &d&olightningwand&7 enchantment."
+- "&7The player must be online and the level must be between 1-9."
+- "&7The <item> must be a valid &e&lMINECRAFT&r &7material, e.g. &fdiamond_hoe&7."
+- "&7The number of uses must be greater than 1."
+- "&7Specify an amount that is 1 or greater, if you put no amount it will not give you an item."
+- "&7Requires premission node: &flightningwand.give"
+- "&7 "
+- "&3/lw reload"
+- "&7Reload the config.yml file."
+- "&7Requires premission node: &flightningwand.reload"
+- "&7 "
+#
+
+#
+# Message sent to the player when they type the /lw reload command.
+# Requires permission: lightningwand.reload
+reload:
+- "&7 "
+- "&f&lLightningWands:"
+- "&a&lSUCCESS!&7 You just reloaded all of the configuration files."
+- "&7 "
+#
+
+#
+# Message sent to the player when they purchase a tool from the GUI menu.
+# Requires permission: lightningwand.gui to view the GUI.
+purchase:
+- "&7 "
+- "&f&lLightningWands:"
+- "&a&lSUCCESS!&7 Your new tool has been added to your inventory! &c$%cost%&7, has been taken from your account."
+- "&7 "
+#
+
+#
+# Message sent to the player when they open the GUI with /lw.
+# Requires permission: lightningwand.gui to view the GUI.
+open-gui:
+- "&7 "
+- "&f&lLightningWands:"
+- "&7Searching the universe for the &bLightningWands&7 merchant..."
+- "&7 "
+#
+
+#
+# Message sent to the player when they type an invalid command.
+# No permission required.
+invalid-command:
+- "&7 "
+- "&f&lLightningWands:"
+- "&c&lERROR!&7 The command you entered is &b&lINVALID&7 please see &e/lw help&7 for command help."
+- "&7 "
+#
+
+#
+# Message sent to the player when they type a command and don't have permission.
+# No permission required.
+no-permission:
+- "&7 "
+- "&f&lLightningWands:"
+- "&c&lERROR!&7 You do not have permission to use that!"
+- "&7 "
+#
+
+#
+# Message sent to the player if they do not have permission to purchase the tool from the GUI.
+# No permission required.
+no-buy-permission:
+- "&7 "
+- "&f&lLightningWands:"
+- "&c&lERROR!&7 You do not have permission to purchase that LightningWand!"
+- "&7 "
+#
+
+#
+# Message sent to the player when they type a command and the player is invalid.
+# Command permission required.
+invalid-player:
+- "&7 "
+- "&f&lLightningWands:"
+- "&c&lERROR!&7 The player who entered is not online."
+- "&7 "
+#
+
+#
+# Message sent to the player when they type a command and the amount is invalid.
+# Command permission required.
+invalid-amount:
+- "&7 "
+- "&f&lLightningWands:"
+- "&c&lERROR!&7 The amount you entered is &b&lINVALID&7, make sure the amount is a positive integer greater than 0."
+- "&7 "
+#
+
+#
+# Message sent to the player when they type a command and the size of lightningwand is invalid.
+# Command permission required.
+invalid-level:
+- "&7 "
+- "&f&lLightningWands:"
+- "&c&lERROR!&7 The enchantment size you entered is &b&lINVALID&7, make sure the enchantment size is between 1 - 9."
+- "&7 "
+#
+
+#
+# Message sent to the player when they type a command and the number of uses is invalid.
+# Command permission required.
+invalid-uses:
+- "&7 "
+- "&f&lLightningWands:"
+- "&c&lERROR!&7 The number of uses you entered is &b&lINVALID&7, make sure it is a positive integer."
+- "&7 "
+#
+
+#
+# Message sent to the player when their lightningwand runs out of uses (uses = 0).
+# No permission required, set this to nothing to remove the message.
+break:
+- "&7 "
+- "&f&lLightningWands:"
+- "&7Your lightning wand has run out of uses!"
+- "&7It has been &a&lRECYCLED&7 back to the server..."
+- "&7 "
+#
+
+#
+# Message sent to the player when they try to use the wand on a creeper that is already charged or super.
+# No permission required, set this to nothing to remove the message.
+already-powered:
+- "&7 "
+- "&f&lLightningWands:"
+- "&c&lERROR!&7 That creeper is already &a&lPOWERED!"
+- "&7 "
+#
+
+#
+# Message sent to the player if they do not have enough money.
+# Requires permission: lightningwand.gui to view the GUI.
+insufficient-funds:
+- "&7 "
+- "&f&lLightningWands:"
+- "&c&lERROR!&7 You do not have enought money to buy that! You only have &c$%bal%&7 and that tool costs &c$%cost%&7."
+- "&7 "
+#
+
+#
+# Message sent to the player if they try to buy a tool and their inventory is full.
+# Requires permission: lightningwand.gui to view the GUI.
+inventory-full:
+- "&7 "
+- "&f&lLightningWands:"
+- "&c&lERROR!&7 Your inventory is full, free some space to buy the tool."
+- "&7 "
+#
+
+#
+# Message sent to the player when they try to use their lightningwand when it is on cooldown.
+# No permission required, set this to nothing to remove the message.
+cooldown:
+- "&7 "
+- "&f&lLightningWands:"
+- "&c&lERROR!&7 Your &fLightningWand&7 is on &e&lCOOLDOWN!&7 It has &b&l%cooldown%&7 seconds remaining."
+- "&7 "
+#

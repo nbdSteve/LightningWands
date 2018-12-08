@@ -1,0 +1,12 @@
+com\nbdsteve\lightningwands\file\providedfile\GenerateProvidedFile.class
+com\nbdsteve\lightningwands\support\MassiveCore.class
+com\nbdsteve\lightningwands\support\WorldGuard.class
+com\nbdsteve\lightningwands\file\LoadProvidedFiles$Files.class
+com\nbdsteve\lightningwands\gui\LightningGui.class
+com\nbdsteve\lightningwands\event\MobClick.class
+com\nbdsteve\lightningwands\support\Factions.class
+com\nbdsteve\lightningwands\event\GroundClick.class
+com\nbdsteve\lightningwands\command\LightningCommand.class
+com\nbdsteve\lightningwands\event\gui\GuiClick.class
+com\nbdsteve\lightningwands\file\LoadProvidedFiles.class
+com\nbdsteve\lightningwands\LightningWands.class

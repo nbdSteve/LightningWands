@@ -1,0 +1,504 @@
+#
+# LightningWands lightning.yml v3.0
+#
+
+# -------------------------------------------------------------
+# Start configuration for lightning-wand-1
+#
+lightning-wand-1:
+  # The name of the tool given to the player.
+  name: "&f&lLIGHTNING WAND &7(&2Tier 1&7)"
+  #
+  # IMPORTANT: Make sure this is located in the Lore section of this configuration.
+  # And make sure it is unique to the tier 1 tools, this will tell the plugin what it is looking for.
+  unique: "&bThunder I"
+  #
+  # If the command specifies infinite uses this will replace the %uses% section.
+  infinite-use-id: "INFINITE"
+  #
+  # this + the uses-id will replace the line in the lore when the player uses the tool.
+  uses-line-id: "&6&lUSES:"
+  uses-id: "&e&l%uses%"
+  #
+  # Cooldown for the tool in seconds, set it to -1 to disable the cooldown.
+  cooldown: 9
+  #
+  # Enchantments that will be applied to the tool with the /lw give command
+  # IMPORTANT: make sure to use these enchantment names https://docs.oc.tc/reference/enchantments (vanilla names may not work!).
+  # Syntax: NAME-LEVEL
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  #
+  # Enchantment Lore, you can make this as many lines as you would like.
+  # In v3.0 you can put the %uses% placeholder anywhere in the lore (must be after the 'uses-line-id').
+  lore:
+  - "&bThunder I"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l9 Seconds"
+#
+
+#
+# The following configuration is for the item displayed in the GUI menu.
+# This item will not be given to the player, the lightning-wand-1 item will be given.
+lightning-wand-1-gui:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 1&7)"
+  unique: "&bThunder I"
+  # The number of uses the tool will come with from the GUI.
+  uses: 1000
+  # If this item will be in the GUI.
+  enabled: true
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder I"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l9 Seconds"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$1,000,000"
+  - "&7&m---------------------------------"
+  # The actual item in the gui (this is the item that will be given to the player).
+  gui-item: blaze_rod
+  # The slot in the GUI that this item will be.
+  gui-slot: 9
+  # The price of the wand, this will be taken from the players account.
+  price: 1000000
+#
+# End configuration for lightning-wand-1
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+# Start configuration for lightning-wand-2
+#
+lightning-wand-2:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 2&7)"
+  unique: "&bThunder II"
+  infinite-use-id: "INFINITE"
+  uses-line-id: "&6&lUSES:"
+  uses-id: "&e&l%uses%"
+  cooldown: 8
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder II"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l8 Seconds"
+#
+
+#
+lightning-wand-2-gui:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 2&7)"
+  unique: "&bThunder II"
+  uses: 2000
+  enabled: true
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder II"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l8 Seconds"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$2,000,000"
+  - "&7&m---------------------------------"
+  gui-item: blaze_rod
+  gui-slot: 10
+  price: 2000000
+#
+# End configuration for lightning-wand-2
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+# Start configuration for lightning-wand-3
+#
+lightning-wand-3:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 3&7)"
+  unique: "&bThunder III"
+  infinite-use-id: "INFINITE"
+  uses-line-id: "&6&lUSES:"
+  uses-id: "&e&l%uses%"
+  cooldown: 7
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder III"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l7 Seconds"
+#
+
+#
+lightning-wand-3-gui:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 3&7)"
+  unique: "&bThunder III"
+  uses: 3000
+  enabled: true
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder III"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l7 Seconds"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$2,000,000"
+  - "&7&m---------------------------------"
+  gui-item: blaze_rod
+  gui-slot: 11
+  price: 3000000
+#
+# End configuration for lightning-wand-3
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+# Start configuration for lightning-wand-4
+#
+lightning-wand-4:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 4&7)"
+  unique: "&bThunder IV"
+  infinite-use-id: "INFINITE"
+  uses-line-id: "&6&lUSES:"
+  uses-id: "&e&l%uses%"
+  cooldown: 6
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder IV"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l6 Seconds"
+#
+
+#
+lightning-wand-4-gui:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 4&7)"
+  unique: "&bThunder IV"
+  uses: 4000
+  enabled: true
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder IV"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l6 Seconds"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$4,000,000"
+  - "&7&m---------------------------------"
+  gui-item: blaze_rod
+  gui-slot: 12
+  price: 4000000
+#
+# End configuration for lightning-wand-4
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+# Start configuration for lightning-wand-5
+#
+lightning-wand-5:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 5&7)"
+  unique: "&bThunder V"
+  infinite-use-id: "INFINITE"
+  uses-line-id: "&6&lUSES:"
+  uses-id: "&e&l%uses%"
+  cooldown: 5
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder V"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l5 Seconds"
+#
+
+#
+lightning-wand-5-gui:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 5&7)"
+  unique: "&bThunder V"
+  uses: 5000
+  enabled: true
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder V"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l5 Seconds"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$5,000,000"
+  - "&7&m---------------------------------"
+  gui-item: blaze_rod
+  gui-slot: 13
+  price: 5000000
+#
+# End configuration for lightning-wand-5
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+# Start configuration for lightning-wand-6
+#
+lightning-wand-6:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 6&7)"
+  unique: "&bThunder VI"
+  infinite-use-id: "INFINITE"
+  uses-line-id: "&6&lUSES:"
+  uses-id: "&e&l%uses%"
+  cooldown: 4
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder VI"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l4 Seconds"
+#
+
+#
+lightning-wand-6-gui:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 6&7)"
+  unique: "&bThunder VI"
+  uses: 6000
+  enabled: true
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder VI"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l4 Seconds"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$6,000,000"
+  - "&7&m---------------------------------"
+  gui-item: blaze_rod
+  gui-slot: 14
+  price: 6000000
+#
+# End configuration for lightning-wand-6
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+# Start configuration for lightning-wand-7
+#
+lightning-wand-7:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 7&7)"
+  unique: "&bThunder VII"
+  infinite-use-id: "INFINITE"
+  uses-line-id: "&6&lUSES:"
+  uses-id: "&e&l%uses%"
+  cooldown: 3
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder VII"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l3 Seconds"
+#
+
+#
+lightning-wand-7-gui:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 7&7)"
+  unique: "&bThunder VII"
+  uses: 7000
+  enabled: true
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder VII"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l3 Seconds"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$7,000,000"
+  - "&7&m---------------------------------"
+  gui-item: blaze_rod
+  gui-slot: 15
+  price: 2000000
+#
+# End configuration for lightning-wand-7
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+# Start configuration for lightning-wand-8
+#
+lightning-wand-8:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 8&7)"
+  unique: "&bThunder VIII"
+  infinite-use-id: "INFINITE"
+  uses-line-id: "&6&lUSES:"
+  uses-id: "&e&l%uses%"
+  cooldown: 2
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder VIII"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l2 Seconds"
+#
+
+#
+lightning-wand-8-gui:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 8&7)"
+  unique: "&bThunder II"
+  uses: 8000
+  enabled: true
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder VIII"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l2 Seconds"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$8,000,000"
+  - "&7&m---------------------------------"
+  gui-item: blaze_rod
+  gui-slot: 16
+  price: 8000000
+#
+# End configuration for lightning-wand-8
+# -------------------------------------------------------------
+
+# -------------------------------------------------------------
+# Start configuration for lightning-wand-9
+#
+lightning-wand-9:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 9&7)"
+  unique: "&bThunder IX"
+  infinite-use-id: "INFINITE"
+  uses-line-id: "&6&lUSES:"
+  uses-id: "&e&l%uses%"
+  cooldown: 1
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder IX"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l1 Seconds"
+#
+
+#
+lightning-wand-9-gui:
+  name: "&f&lLIGHTNING WAND &7(&2Tier 9&7)"
+  unique: "&bThunder IX"
+  uses: 9000
+  enabled: true
+  enchantments:
+  - DURABILITY-3
+  - FIRE_ASPECT-5
+  lore:
+  - "&bThunder IX"
+  - "&6&lUSES: &e&l%uses%"
+  - "&7 "
+  - "&7&oThis wand was designed to"
+  - "&7&ocharge creepers and ignited"
+  - "&7&oenemies, use it wisely..."
+  - "&7 "
+  - "&7&lCOOLDOWN: &f&l1 Seconds"
+  - "&7 "
+  - "&7&m---------------------------------"
+  - "&a&lBUY PRICE: &f$9,000,000"
+  - "&7&m---------------------------------"
+  gui-item: blaze_rod
+  gui-slot: 17
+  price: 9000000
+#
+# End configuration for lightning-wand-9
+# -------------------------------------------------------------

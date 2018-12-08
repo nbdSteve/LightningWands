@@ -1,0 +1,11 @@
+name: LightningWands
+author: nbdSteve
+version: 3.0
+main: com.nbdsteve.lightningwands.LightningWands
+commands:
+  lw:
+    usage: /<command>
+    description: Type '/lw help' for command help.
+  lightning:
+    usage: /<command>
+    description: Type '/lw help' for command help.
