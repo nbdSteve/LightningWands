@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Merchant Gui class, this creates and adds the harvester tools to the Merchant Gui.
+ * Merchant Gui class, this creates and adds the lightning wands to the Merchant Gui.
  */
 public class LightningGui {
     //Register the main class
@@ -25,7 +25,7 @@ public class LightningGui {
     private LoadProvidedFiles lpf = ((LightningWands) pl).getFiles();
 
     /**
-     * Method to create the gui whenever the player runs the /lightning command
+     * Method to create the gui whenever the player runs the /lw command
      *
      * @param p player, cannot be null
      */
@@ -74,7 +74,7 @@ public class LightningGui {
                 //Add it to the gui
                 i.setItem(lpf.getLightning().getInt(tool + ".gui-slot"), ttool);
             } else {
-
+                //Do nothing
             }
         }
         p.openInventory(i);

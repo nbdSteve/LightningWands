@@ -22,7 +22,7 @@ public final class LightningWands extends JavaPlugin {
     //New LoadProvidedFiles instance
     private LoadProvidedFiles lpf;
     //Create the cooldown hashmap
-    public HashMap<UUID, Long> LightningCDT = new HashMap<>();
+    private HashMap<UUID, Long> LightningCDT = new HashMap<>();
 
     /**
      * Method called when the plugin starts, register all events and commands in this method
