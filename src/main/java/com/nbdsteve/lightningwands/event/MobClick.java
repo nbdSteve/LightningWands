@@ -50,36 +50,20 @@ public class MobClick implements Listener {
                 if (p.getInventory().getItemInHand().getItemMeta().hasLore()) {
                     ItemMeta toolMeta = p.getInventory().getItemInHand().getItemMeta();
                     List<String> toolLore = toolMeta.getLore();
-                    String toolType;
+                    String toolType = null;
                     //Get the level of lightning from the tool lore
-                    if (toolLore.contains(
-                            ChatColor.translateAlternateColorCodes('&', lpf.getLightning().getString("lightning-wand-1.unique")))) {
-                        toolType = "lightning-wand-1";
-                    } else if (toolLore.contains(
-                            ChatColor.translateAlternateColorCodes('&', lpf.getLightning().getString("lightning-wand-2.unique")))) {
-                        toolType = "lightning-wand-2";
-                    } else if (toolLore.contains(
-                            ChatColor.translateAlternateColorCodes('&', lpf.getLightning().getString("lightning-wand-3.unique")))) {
-                        toolType = "lightning-wand-3";
-                    } else if (toolLore.contains(
-                            ChatColor.translateAlternateColorCodes('&', lpf.getLightning().getString("lightning-wand-4.unique")))) {
-                        toolType = "lightning-wand-4";
-                    } else if (toolLore.contains(
-                            ChatColor.translateAlternateColorCodes('&', lpf.getLightning().getString("lightning-wand-5.unique")))) {
-                        toolType = "lightning-wand-5";
-                    } else if (toolLore.contains(
-                            ChatColor.translateAlternateColorCodes('&', lpf.getLightning().getString("lightning-wand-6.unique")))) {
-                        toolType = "lightning-wand-6";
-                    } else if (toolLore.contains(
-                            ChatColor.translateAlternateColorCodes('&', lpf.getLightning().getString("lightning-wand-7.unique")))) {
-                        toolType = "lightning-wand-7";
-                    } else if (toolLore.contains(
-                            ChatColor.translateAlternateColorCodes('&', lpf.getLightning().getString("lightning-wand-8.unique")))) {
-                        toolType = "lightning-wand-8";
-                    } else if (toolLore.contains(
-                            ChatColor.translateAlternateColorCodes('&', lpf.getLightning().getString("lightning-wand-9.unique")))) {
-                        toolType = "lightning-wand-9";
-                    } else {
+                    for (int i = 1; i < 10; i++) {
+                        String tool = "lightning-wand-" + String.valueOf(i);
+                        try {
+                            lpf.getLightning().getString(tool + ".unique");
+                            if (toolLore.contains(ChatColor.translateAlternateColorCodes('&', lpf.getLightning().getString(tool + ".unique")))) {
+                                toolType = tool;
+                            }
+                        } catch (Exception ex) {
+                            //Do nothing, this tool isn't active or doesn't exist
+                        }
+                    }
+                    if (toolType == null) {
                         return;
                     }
                     boolean wg = false;
