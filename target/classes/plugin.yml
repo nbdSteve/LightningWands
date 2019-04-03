@@ -1,7 +1,8 @@
 name: LightningWands
-author: nbdSteve
 version: 3.1.4
 main: dev.nuer.strike.LightningWands
+author: Nuer
+api-version: 1.13
 commands:
   lw:
     usage: /<command>

@@ -85,8 +85,16 @@ public class MobClick implements Listener {
                             return;
                         }
                     }
+                    //Check if the creeper is already powered
+                    if (mob.isPowered()) {
+                        for (String line : lpf.getMessages().getStringList("already-powered")) {
+                            p.sendMessage(ChatColor.translateAlternateColorCodes('&', line));
+                        }
+                        return;
+                    }
+                    //Store the cooldown
                     int cooldown = lpf.getLightning().getInt(toolType + ".cooldown");
-                    if (cooldown != -1 && cooldown >= 0) {
+                    if (cooldown >= 0) {
                         if (toolCDT.containsKey(p.getUniqueId())) {
                             long CDT = ((toolCDT.get(p.getUniqueId()) / 1000) + cooldown)
                                     - (System.currentTimeMillis() / 1000);
@@ -95,25 +103,21 @@ public class MobClick implements Listener {
                                     p.sendMessage(ChatColor.translateAlternateColorCodes('&', line)
                                             .replace("%cooldown%", String.valueOf(CDT)));
                                 }
+                                return;
                             } else {
                                 toolCDT.remove(p.getUniqueId());
                             }
-                            e.setCancelled(true);
+                            return;
                         } else {
                             toolCDT.put(p.getUniqueId(), System.currentTimeMillis());
                         }
                     }
+                    //Know that the creeper isn't powered so power it
+                    mob.setPowered(true);
                     //Strike lightning at that location
                     e.getRightClicked().getLocation().getWorld().strikeLightningEffect(e.getRightClicked().getLocation());
-                    if (mob.isPowered()) {
-                        for (String line : lpf.getMessages().getStringList("already-powered")) {
-                            p.sendMessage(ChatColor.translateAlternateColorCodes('&', line));
-                        }
-                    } else {
-                        mob.setPowered(true);
-                    }
                     //Get the id for the uses line
-                    String uID = ChatColor.translateAlternateColorCodes('&', lpf.getLightning().getString(toolType + ".uses-unique-line-id"));
+                    String uID = ChatColor.translateAlternateColorCodes('&', lpf.getLightning().getString(toolType + ".uses-line-id"));
                     try {
                         for (int i = 0; i < toolMeta.getLore().size(); i++) {
                             String l = toolMeta.getLore().get(i);
