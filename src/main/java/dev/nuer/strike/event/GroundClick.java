@@ -65,7 +65,8 @@ public class GroundClick implements Listener {
                     }
                     //Figure out which plugins are being used and what to support
                     if (Bukkit.getPluginManager().getPlugin("WorldGuard") != null) {
-                        if (!WorldGuard.allowsBreak(e.getClickedBlock().getLocation())) {
+                        if (!WorldGuard.allowsBreak(e.getClickedBlock().getX(),
+                                e.getClickedBlock().getY(), e.getClickedBlock().getZ(), p)) {
                             e.setCancelled(true);
                             return;
                         }

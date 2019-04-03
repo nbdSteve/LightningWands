@@ -68,7 +68,9 @@ public class MobClick implements Listener {
                     }
                     //Figure out which plugins are being used and what to support
                     if (Bukkit.getPluginManager().getPlugin("WorldGuard") != null) {
-                        if (!WorldGuard.allowsBreak(e.getRightClicked().getLocation())) {
+                        if (!WorldGuard.allowsBreak(e.getRightClicked().getLocation().getBlockX(),
+                                e.getRightClicked().getLocation().getBlockY(),
+                                e.getRightClicked().getLocation().getBlockZ(), p)) {
                             e.setCancelled(true);
                             return;
                         }
