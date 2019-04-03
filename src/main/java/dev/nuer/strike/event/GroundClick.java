@@ -50,7 +50,7 @@ public class GroundClick implements Listener {
                     String toolType = null;
                     //Get the level of lightning from the tool lore
                     for (int i = 1; i < 10; i++) {
-                        String tool = "lightning-wand-" + String.valueOf(i);
+                        String tool = "lightning-wand-" + i;
                         try {
                             lpf.getLightning().getString(tool + ".unique");
                             if (toolLore.contains(ChatColor.translateAlternateColorCodes('&', lpf.getLightning().getString(tool + ".unique")))) {
@@ -84,7 +84,7 @@ public class GroundClick implements Listener {
                         }
                     }
                     int cooldown = lpf.getLightning().getInt(toolType + ".cooldown");
-                    if (cooldown != -1 && cooldown >= 0) {
+                    if (cooldown >= 0) {
                         if (toolCDT.containsKey(p.getUniqueId())) {
                             long CDT = ((toolCDT.get(p.getUniqueId()) / 1000) + cooldown)
                                     - (System.currentTimeMillis() / 1000);
@@ -93,11 +93,11 @@ public class GroundClick implements Listener {
                                     p.sendMessage(ChatColor.translateAlternateColorCodes('&', line)
                                             .replace("%cooldown%", String.valueOf(CDT)));
                                 }
+                                return;
                             } else {
                                 toolCDT.remove(p.getUniqueId());
+                                return;
                             }
-                            e.setCancelled(true);
-                            return;
                         } else {
                             toolCDT.put(p.getUniqueId(), System.currentTimeMillis());
                         }

@@ -2,6 +2,7 @@ name: LightningWands
 author: nbdSteve
 version: ${project.version}
 main: dev.nuer.strike.LightningWands
+api-version: 1.13
 commands:
   lw:
     usage: /<command>
