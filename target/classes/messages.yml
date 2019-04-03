@@ -1,8 +1,8 @@
 #
-# LightningWands messages v3.1.2
+# LightningWands messages v3.1.4
 #
 # Message sent to the player when the type the /lw help command.
-# Requires premission: lightning.help
+# Requires permission: lightning.help
 help:
 - "&7 "
 - "&f&lLightningWands &7- &emade by &6&lnbdSteve"

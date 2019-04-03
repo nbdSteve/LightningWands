@@ -1,7 +1,7 @@
 name: LightningWands
 author: nbdSteve
 version: ${project.version}
-main: com.nbdsteve.lightningwands.LightningWands
+main: dev.nuer.strike.LightningWands
 commands:
   lw:
     usage: /<command>

@@ -1,7 +1,7 @@
 name: LightningWands
 author: nbdSteve
-version: 3.1.2
-main: com.nbdsteve.lightningwands.LightningWands
+version: 3.1.4
+main: dev.nuer.strike.LightningWands
 commands:
   lw:
     usage: /<command>
