@@ -1,7 +1,7 @@
 name: LightningWands
-author: nbdSteve
 version: ${project.version}
 main: dev.nuer.strike.LightningWands
+author: Nuer
 api-version: 1.13
 commands:
   lw:
